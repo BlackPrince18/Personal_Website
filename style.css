@@ -1,0 +1,438 @@
+body
+{
+    margin: 0%;
+    background-image: url("img/img2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/*              NAVIGATION BAR              */
+
+.navbar ul
+{
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+}
+
+.navbar a
+{
+    color: black;
+    padding: 0.938rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: sans-serif;      
+}
+
+.navbar a:hover
+{
+    background-color: hsl(152, 99%, 27%);
+}
+
+.navbar li
+{
+    float: left;
+}
+
+#first
+{
+    margin-left: 62.5rem;    
+}
+
+#logo
+{
+    width: 10%;
+    margin-left: 4%; 
+}
+
+@media (max-width: 1840px)
+{
+    #first
+    {
+        margin-left: 50rem;
+    }
+}
+
+@media (max-width: 1640px)
+{
+    #first
+    {
+        margin-left: 37.5rem;
+    }
+}
+
+@media (max-width: 1440px)
+{
+    #first
+    {
+        margin-left: 25rem;
+    }
+}
+
+@media (max-width: 1240px)
+{
+    #first
+    {
+        margin-left: 12.5rem;
+    }
+}
+
+@media (max-width: 1040px)
+{
+    #first
+    {
+        margin-left: 1rem;
+    }
+}
+
+/*                  HOME PAGE               */
+
+#user
+{
+    width: 17%;
+    border: 0.188rem solid hsl(155, 13%, 18%);
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    box-shadow: 0.188rem 0.188rem 0.313rem;
+}
+
+.user h1
+{
+    text-align: center;
+    font-family: sans-serif;
+    word-spacing: 0.23em;
+}
+
+.user p
+{
+    padding: 4%;
+    font-family: sans-serif;
+    font-size: 1.125rem;
+    text-align: center;
+    word-spacing: 0.23em;
+}
+
+/*              HOME ANIMATION              */
+
+@keyframes mySlideWelcome
+{
+    from { margin-left: 0%; }
+    to { margin-left: 70%; }
+}
+
+.home_animation
+{
+    animation: mySlideWelcome;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+}
+
+.home_animation h1
+{
+    margin: 10rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5rem;
+    color: hsl(155, 10%, 24%);
+    text-shadow: 0.188rem 0.188rem 0.25rem;
+}
+
+@media (max-width: 1640px)
+{
+    @keyframes mySlideWelcome
+    {   
+        from { margin-left: 0%; }
+        to { margin-left: 50%; }
+    }
+
+    .home_animation
+    {
+        animation: mySlideWelcome;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 3s;
+    }
+
+    .home_animation h1
+    {
+        margin: 6rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 5rem;
+        color: hsl(155, 10%, 24%);
+        text-shadow: 0.188rem 0.188rem 0.25rem;
+    }
+}
+
+@media (max-width: 940px)
+{
+    @keyframes mySlideWelcome
+    {   
+        from { margin-left: 0%; }
+        to { margin-left: 50%; }
+    }
+
+    .home_animation
+    {
+        animation: mySlideWelcome;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+    }
+
+    .home_animation h1
+    {
+        margin: 5rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 5rem;
+        color: hsl(155, 10%, 24%);
+        text-shadow: 0.188rem 0.188rem 0.25rem;
+    }
+}
+
+/*              ABOUT PAGE              */
+
+.education
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards
+{
+    width: 20%;
+    background-color: white;
+    margin: 2%;
+    border-radius: 4%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+}
+
+.cards:hover
+{
+    box-shadow: 2px 2px 10px black;
+}
+
+#firstC
+{
+    margin-left: 27.5%;
+}
+
+.image img
+{
+    width: 100%;
+    border-radius: 4%;
+}
+
+.title
+{
+    text-align: center;
+}
+
+.description
+{
+    text-align: center;
+    padding: 2%;
+}
+
+#row2
+{
+    margin-left: 15%
+}
+
+/*              PORTOFOLIO              */
+
+.lanImg
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lanImg img
+{
+    width: 35%;
+    margin: 3%;
+    border: 0.3rem solid hsl(207, 88%, 37%);
+}
+
+.lanText
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.lanText p
+{
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.lanText a
+{
+    margin-left: 1%;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.resumeImg
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resumeImg img
+{
+    width: 35%;
+    margin: 3%;
+    border: 0.3rem solid hsl(207, 88%, 37%);
+}
+
+.resumeText
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.resumeText p
+{
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.resumeText a
+{
+    margin-left: 1%;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*              CONTACT PAGE                */
+
+.form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form form
+{
+    width: 90%;
+    max-width: 600px;
+}
+
+.input-group
+{
+    margin-bottom: 1.875rem;
+    position: relative;
+}
+
+input, textarea
+{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #000;
+    color: #000;
+    background: transparent;
+    font-size: 15px;
+}
+
+label
+{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #000;
+    cursor: text;
+    transition: 0.2s;
+}
+
+button
+{
+    padding: 10px 0;
+    color: #000;
+    outline: none;
+    background: transparent;
+    border: 1px solid #000;
+    width: 100%;
+    cursor: pointer;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label
+{
+    top: -35px;
+    font-size: 14;
+}
+
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.row .input-group
+{
+    flex-basis: 48%;
+}
+
+/*              FOOTER              */
+
+footer
+{
+    margin-top: 2%;
+    width: 100%;    
+    min-height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5% 0;
+    flex-wrap: wrap;
+}
+
+footer li
+{
+    list-style-type: none;
+    font-size: 2em;
+    color: black;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer p
+{
+    margin-left: 0.5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
